@@ -31,7 +31,7 @@ test_data_accuracy = accuracy_score(X_test_prediction, Y_test)
 st.title('Heart Disease Preidction Model')
 
 input_text = st.text_input('Provide comma separated features to predict heart disease')
-sprted_input = input_text.split(',')
+sprted_input = input_text.split(',') if input_text else []
 img = Image.open('heart_img.jpg')
 st.image(img,width=150)
 
@@ -54,3 +54,4 @@ st.subheader("Model Performance on Training Data")
 st.write(training_data_accuracy)
 st.subheader("Model Performance on Test Data")
 st.write(test_data_accuracy)
+
