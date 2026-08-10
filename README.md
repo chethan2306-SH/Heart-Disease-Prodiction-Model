@@ -1,1 +1,1 @@
-# Heart-Disease-Prodiction-Model
+# Heart-Disease-Prediction-Model
